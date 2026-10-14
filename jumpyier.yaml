@@ -1,0 +1,8 @@
+version: 1
+project:
+  name: example
+  stack: laravel-vue
+  php: "8.3"
+frontend:
+  vue: true
+  tailwind: true
