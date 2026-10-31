@@ -5,7 +5,8 @@ cd /var/www/html
 
 if [ ! -f vendor/autoload.php ]; then
     echo "→ composer install..."
-    composer install --no-interaction --prefer-dist
+    git config --global --add safe.directory /var/www/html 2>/dev/null || true
+    composer install --no-interaction --prefer-dist --no-blocking
 fi
 
 if [ ! -f .env ]; then

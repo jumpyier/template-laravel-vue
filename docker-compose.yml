@@ -3,6 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    user: "${UID:-1000}:${GID:-1000}"
+    environment:
+      COMPOSER_HOME: /tmp/composer
+      COMPOSER_NO_BLOCKING: "1"
     ports:
       - "8000:8000"
     volumes:
@@ -21,6 +25,7 @@ services:
 
   vite:
     image: node:20-alpine
+    user: "${UID:-1000}:${GID:-1000}"
     working_dir: /var/www/html
     volumes:
       - .:/var/www/html
