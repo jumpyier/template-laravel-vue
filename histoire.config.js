@@ -1,8 +1,8 @@
 import { defineConfig } from 'histoire'
-import vue from '@vitejs/plugin-vue'
+import { HstVue } from '@histoire/plugin-vue'
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [HstVue()],
   storyMatch: ['resources/js/**/*.story.vue'],
   theme: {
     title: 'Jumpyier Design System',

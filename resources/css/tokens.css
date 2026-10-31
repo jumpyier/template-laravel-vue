@@ -1,4 +1,10 @@
 /* Généré par `jumpyier design sync` depuis .jumpyier/design/tokens.json */
-/* Placeholder: sera remplacé par les tokens DTCG Figma */
 :root {
+  --color-accent: #2563eb;
+  --color-card: #f9fafb;
+  --color-ink: #111827;
+  --color-muted: #6b7280;
+  --color-surface: #ffffff;
+  --spacing-card: 1.5rem;
+  --radius-card: 0.5rem;
 }
