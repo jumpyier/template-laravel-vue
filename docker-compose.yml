@@ -24,7 +24,7 @@ services:
       start_period: 60s
 
   vite:
-    image: node:20-alpine
+    image: node:20-bookworm-slim
     user: "${UID:-1000}:${GID:-1000}"
     working_dir: /var/www/html
     volumes:
